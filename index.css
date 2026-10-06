@@ -1,0 +1,30 @@
+:root {
+    font-family: sans-serif;
+
+    --main-horizontal-margin: 140px;
+    --mobile-main-horizontal-margin: 20px;
+
+    --global-font-size: 20pt;
+
+    --base-border-radius: 40px;
+    --padding-step: 8px;
+
+    --global-background-color: rgba(0, 0, 0, 0.3);
+    --global-backdrop-filter: blur(4px);
+    --global-rim-shadows:
+        0 3px 3px rgba(255, 255, 255, 0.5) inset,
+        0 -3px 3px rgba(0, 0, 0, 0.5) inset;
+
+    --global-shadow-color: rgba(50, 50, 50, 0.3);
+}
+    body {
+        margin: 0;
+    }
+        main {
+            margin-left: var(--main-horizontal-margin);
+            margin-right: var(--main-horizontal-margin);
+        }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }

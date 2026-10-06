@@ -1,0 +1,50 @@
+.footer-container {
+    position: sticky;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+    .footer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        --depth: 1;
+        padding: var(--padding-step);
+        border-radius: calc(
+            var(--base-border-radius) -
+            (var(--depth) * var(--padding-step))
+        );
+        
+        display: flex;
+        gap: 8px;
+        
+        background-color: var(--global-background-color);
+        backdrop-filter: var(--global-backdrop-filter);
+        box-shadow: var(--global-rim-shadows);
+    }
+        .footer-link {
+            display: inline-block;
+
+            --depth: 2;
+            padding: 2px var(--padding-step) 2px var(--padding-step);
+            border-radius: calc(
+                var(--base-border-radius) -
+                (var(--depth) * var(--padding-step))
+            );
+
+            background-color: var(--global-background-color);
+            backdrop-filter: var(--global-backdrop-filter);
+            box-shadow: var(--global-rim-shadows);
+
+            text-decoration: none;
+            font-size: var(--global-font-size);
+
+            user-select: none;
+        }
+            .footer-link > img {
+                vertical-align: middle;
+                filter: invert(75%);
+            }

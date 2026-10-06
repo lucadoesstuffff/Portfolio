@@ -1,0 +1,18 @@
+.project-header {
+    width: 100%;
+    height: 160px;
+
+    display: flex;
+    flex-direction: row;
+    
+    border-radius: 0 0 var(--base-border-radius) var(--base-border-radius);
+    background-size: cover;
+
+    box-shadow: var(--global-rim-shadows);
+}
+    .project-header-title {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        align-self: flex-end;
+    }

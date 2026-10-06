@@ -1,0 +1,40 @@
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    .card {
+        min-height: 160px;
+
+        display: flex;
+        flex-direction: column;
+
+        --depth: 1;
+        padding: var(--padding-step);
+        border-radius: calc(
+            var(--base-border-radius) -
+            (var(--depth) * var(--padding-step))
+        );
+
+        background-color: lightgray;
+        background-size: cover;
+        
+        text-decoration: none;
+        color: black;
+        font-size: var(--global-font-size);
+        font-weight: bold;
+
+        box-shadow: var(--global-rim-shadows);
+
+        transition: 
+            font-size 0.2s ease,
+            min-height 0.2s ease;
+    }
+    .card:hover, .card:focus-within {
+        font-size: 200%;
+        min-height: 190px;
+    }
+        .card-spacer {
+            flex: 1;
+        }

@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    main {
+        margin-left: var(--mobile-main-horizontal-margin);
+        margin-right: var(--mobile-main-horizontal-margin);
+    }
+}
