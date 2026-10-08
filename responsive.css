@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    main {
+        margin-left: var(--mobile-main-horizontal-margin);
+        margin-right: var(--mobile-main-horizontal-margin);
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        margin-left: var(--tablet-main-horizontal-margin);
+        margin-right: var(--tablet-main-horizontal-margin);
+    }
+}

@@ -1,7 +1,8 @@
 :root {
     font-family: sans-serif;
 
-    --main-horizontal-margin: 140px;
+    --main-horizontal-margin: 300px;
+    --tablet-main-horizontal-margin: 160px;
     --mobile-main-horizontal-margin: 20px;
 
     --global-font-size: 20pt;
